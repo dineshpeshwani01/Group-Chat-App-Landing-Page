@@ -1,0 +1,101 @@
+:root{
+    --purple: #674baf;
+    --white: #ffffff;
+    --light-purple: rgba(103,75,175,0.5);
+}
+
+body{
+    background-color: var(--purple);
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#title-name{
+    display: flex;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+
+#chat-img{
+    padding: 15px;
+    width: 30px;
+}
+
+span{
+  margin-top: 150px;
+}
+
+#tag-line{
+    font: 2em sans-serif;
+    font-weight: bold;
+}
+
+.btn{
+    padding: 15px;
+    width: 200px;
+    font-size: medium;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: var(--white);
+    color: var(--light-purple);
+    border-color: var(--purple);
+    transition: transform .5s;
+}
+
+.btn:hover{
+    transform: scale(1.10);
+    color: var(--purple);
+    cursor: pointer;
+}
+
+footer{
+    float: right;
+    margin-right: 60px;
+    color: var(--white);
+}
+
+.fa{
+    margin-right: 25px;
+}
+
+.fa-facebook-square{
+    color: var(--purple);
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: transform .5s;
+}
+.fa-twitter-square{
+    color: var(--purple);
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: transform .5s;
+}
+.fa-youtube-square{
+    color: var(--purple);
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    transition: transform .1s;
+}
+
+.fa-facebook-square:hover{
+    transform: scale(1.25);
+}
+
+.fa-twitter-square:hover{
+    transform: scale(1.25);
+}
+
+.fa-youtube-square:hover{
+    transform: scale(1.25);
+}
