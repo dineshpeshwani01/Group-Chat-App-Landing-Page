@@ -9,7 +9,29 @@ body{
     font-family: 'Poppins', sans-serif;
     color: var(--white);
     box-sizing: border-box;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
+@keyframes fadeInAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slideInAnimation {
+    0%   { left: -200px;}
+    100% { left: 0px;}
+  }
+
+  @keyframes slideInAnimationForRight {
+    0%   { right: -200px;}
+    100% { right: 0px;}
+  }
 
 section{
     display: flex;
@@ -17,15 +39,25 @@ section{
     margin-right: 100px;
 }
 
+#svg-img{
+    position: relative;
+    animation-name: slideInAnimation;
+    animation-duration: 2s;
+}
+
 #title-name{
     display: flex;
     margin-left: 120px;
     margin-top: 50px;
+    position: relative;
+    animation-name: slideInAnimation;
+    animation-duration: 2s;
 }
 
 #chat-img{
     padding: 15px;
     width: 30px;
+    position: relative;
 }
 
 span{
@@ -35,6 +67,15 @@ span{
 #tag-line{
     font: 2em sans-serif;
     font-weight: bold;
+    position: relative;
+    animation-name: slideInAnimationForRight;
+    animation-duration: 2s;
+}
+
+#description{
+    position: relative;
+    animation-name: slideInAnimationForRight;
+    animation-duration: 2s;
 }
 
 .btn{
@@ -48,6 +89,9 @@ span{
     color: var(--light-purple);
     border-color: var(--purple);
     transition: transform .5s;
+    position: relative;
+    animation-name: slideInAnimationForRight;
+    animation-duration: 2s;
 }
 
 .btn:hover{
@@ -64,6 +108,9 @@ footer{
 
 .fa{
     margin-right: 25px;
+    position: relative;
+    animation-name: slideInAnimationForRight;
+    animation-duration: 2s;
 }
 
 .fa-facebook-square{
