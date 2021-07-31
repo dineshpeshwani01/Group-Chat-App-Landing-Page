@@ -1,26 +1,7 @@
-:root{
-    --purple: #674baf;
-    --white: #ffffff;
-    --light-purple: rgba(103,75,175,0.5);
-}
-
-body{
-    background-color: var(--purple);
-    font-family: 'Poppins', sans-serif;
-    color: var(--white);
-    box-sizing: border-box;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
+/*Animation Keyframes*/
 @keyframes fadeInAnimation {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 @keyframes slideInAnimation {
@@ -33,11 +14,35 @@ body{
     100% { right: 0px;}
   }
 
+/*Color Declarations*/
+
+:root{
+    --purple: #674baf;
+    --white: #ffffff;
+    --light-purple: rgba(103,75,175,0.5);
+}
+
+/*Adding CSS on entire page*/
+
+body{
+    background-color: var(--purple);
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    box-sizing: border-box;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}  
+
+/*Adding CSS on Image description an button*/
+
 section{
     display: flex;
     margin-left: 100px;
     margin-right: 100px;
 }
+
+/*Adding CSS on Image*/
 
 #svg-img{
     position: relative;
@@ -45,20 +50,27 @@ section{
     animation-duration: 2s;
 }
 
+/*Adding CSS on APP NAME*/
+
 #title-name{
     display: flex;
     margin-left: 120px;
     margin-top: 50px;
     position: relative;
+    align-items: center;
     animation-name: slideInAnimation;
     animation-duration: 2s;
 }
+
+/*Adding CSS on app logo*/
 
 #chat-img{
     padding: 15px;
     width: 30px;
     position: relative;
 }
+
+/*Adding CSS on */
 
 span{
   margin-top: 150px;
@@ -145,4 +157,55 @@ footer{
 
 .fa-youtube-square:hover{
     transform: scale(1.25);
+}
+
+@media screen and (max-width: 600px){
+    section{
+      width: 80vw;
+      display: block;
+   }
+
+   #title-name{
+       width: 70vw;
+       margin-left: 75px;
+       margin-top: 15px;
+       align-items: center;
+   }
+
+   #svg-img{
+       width: 90vw;
+       margin-left: -70px;
+       align-items: center;
+   }
+
+   #tag-line{
+       width: 70vw;
+       margin-left: -30px;
+       font-size: x-large;
+       align-items: center;
+       margin-top: -10px;
+   }
+
+#description{
+       width: 70vw;
+       align-items: center;
+       margin-left: -28px;
+}
+
+.btn{
+    width: 45vw;
+    justify-content: center;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+footer{
+    float: left;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.fa{
+    
+    margin-left: -20px;
 }
